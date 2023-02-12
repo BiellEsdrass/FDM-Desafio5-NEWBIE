@@ -1,0 +1,120 @@
+*,*::after,::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$green: #3c8067;
+$white:#f2ebe3;
+$black: #1c232b;
+$gray: #6c7289;
+
+
+body{
+    font-family: 'Montserrat', sans-serif;
+
+    background-color: $white;
+}
+
+.section{
+    background-color: white;
+    display: flex;
+    border-radius: 25px;
+    width: 650px;
+
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+
+
+    .left{
+
+        #imgProduct{
+            height: 100%;
+            width: 100%;
+            border-radius: 25px 0px 0px 25px;
+        }
+    }
+
+    .right{
+        padding: 2rem ;
+        width: 80%;
+
+
+        h5{
+            letter-spacing: 5px;
+            font-size: 13px;
+            color: rgba(0, 0, 0, 0.273);
+        }
+
+        #name{
+            width: 85%;
+            font-family: 'Fraunces', serif;
+            font-size: 35px;
+            color: #1c232b;
+            margin-top: 1.4rem;
+            margin-bottom: 2.4rem;
+            line-height: 2.5rem;
+        }
+
+        p{
+            color: #6c7289b6;
+            margin-bottom: 2.4rem;
+        }
+
+        .price{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            h2{
+                font-family: 'Fraunces', serif;
+                color: #3c8067;
+                font-size: 40px;
+            }
+
+            span{
+                text-decoration: line-through;
+                color: #6c7289;
+            }
+        }
+
+        .btn{
+            background-color: #3c8067;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 3rem;
+            cursor: pointer;
+            text-decoration: none;
+
+            border-radius: 8px;
+            height: 3.5rem;
+            transition: all .5s;
+
+            &:hover{
+                background-color: #1a523e;
+            }
+
+            h1{
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+
+.attribution{
+    color: #1c232b;
+    position: absolute;
+    top: 95%;
+    margin-left: 50%;
+    transform: translate(-50%,-50%);
+
+    a{
+        color: #3c8067;
+    }
+}
